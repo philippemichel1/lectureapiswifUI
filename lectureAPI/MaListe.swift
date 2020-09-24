@@ -18,7 +18,7 @@ struct MaListe: View {
                         Image(systemName: "person.circle")
                             .foregroundColor(.red)
                         NavigationLink(
-                            destination: DetailUtilisateurs(),
+                            destination: DetailUtilisateurs(detail: donnee),
                             label: {
                                 Text(" nom: \(donnee.name)")
                             })
