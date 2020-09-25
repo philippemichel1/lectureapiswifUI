@@ -24,7 +24,7 @@ class APIRequete:ObservableObject {
                         let resultat = try JSONDecoder().decode([personne].self, from: mesDonnees)
                         DispatchQueue.main.async { [self] in
                          // lecture des variable de la struct
-                            // rrempli le le tableau
+                            // rrempli le tableau
                             self.listeUtilisateurs = resultat
                         }
                     } catch {
@@ -35,5 +35,4 @@ class APIRequete:ObservableObject {
             
         } // url
     }
-    // Mon ancienne solution
 }
