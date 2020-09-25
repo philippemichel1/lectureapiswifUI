@@ -26,7 +26,9 @@ struct DetailUtilisateurs: View {
     }
 }
 
-//struct DetailUtilisateurs_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailUtilisateurs(detail: con)
-//}
+struct DetailUtilisateurs_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailUtilisateurs(detail:.init(id: 1, name: "dupont", username: "dupont", email: "email@email.com", address: address.init(street: "rue", suite: "suite", city: "city", zipcode: "21", geo: geo.init(lat: "200", lng: "200")), phone: "321", website: "www.titastus.com", company: company.init(name: "ma socite", catchPhrase: "XXX", bs: "xxx")))
+    }
+    
+}
