@@ -13,6 +13,8 @@ struct DetailUtilisateurs: View {
         VStack {
             Text("Utilisateur:  \(detail.username)")
             Spacer()
+            LocaliserPoint(maLocalisation: detail)
+            Spacer()
             Text("Nom \(detail.name)")
             Text("    \(detail.address.suite)")
             Text("Rue \(detail.address.street)")

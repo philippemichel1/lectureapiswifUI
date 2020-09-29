@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3779B29A25227F95000356D8 /* LocaliserPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779B29925227F95000356D8 /* LocaliserPoint.swift */; };
 		378285B2251A957E0033D690 /* MaListe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378285B1251A957E0033D690 /* MaListe.swift */; };
 		37D0E509251A4E6700D6BF25 /* lectureAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0E508251A4E6700D6BF25 /* lectureAPIApp.swift */; };
 		37D0E50B251A4E6700D6BF25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0E50A251A4E6700D6BF25 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3779B29925227F95000356D8 /* LocaliserPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaliserPoint.swift; sourceTree = "<group>"; };
 		378285B1251A957E0033D690 /* MaListe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaListe.swift; sourceTree = "<group>"; };
 		37D0E505251A4E6700D6BF25 /* lectureAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lectureAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D0E508251A4E6700D6BF25 /* lectureAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lectureAPIApp.swift; sourceTree = "<group>"; };
@@ -41,6 +43,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3779B29425227E4C000356D8 /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+				37D0E51B251A4FD900D6BF25 /* DonneesModele.swift */,
+				37D0E518251A4F0B00D6BF25 /* APIRequete.swift */,
+			);
+			path = Modele;
+			sourceTree = "<group>";
+		};
+		3779B29525227E5C000356D8 /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+				378285B1251A957E0033D690 /* MaListe.swift */,
+				37D0E51E251A507600D6BF25 /* DetailUtilisateurs.swift */,
+				3779B29925227F95000356D8 /* LocaliserPoint.swift */,
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		3779B29725227EE3000356D8 /* Controleur */ = {
+			isa = PBXGroup;
+			children = (
+				37D0E50A251A4E6700D6BF25 /* ContentView.swift */,
+				37D0E508251A4E6700D6BF25 /* lectureAPIApp.swift */,
+			);
+			path = Controleur;
+			sourceTree = "<group>";
+		};
 		37D0E4FC251A4E6700D6BF25 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +90,9 @@
 		37D0E507251A4E6700D6BF25 /* lectureAPI */ = {
 			isa = PBXGroup;
 			children = (
-				37D0E508251A4E6700D6BF25 /* lectureAPIApp.swift */,
-				37D0E50A251A4E6700D6BF25 /* ContentView.swift */,
-				37D0E51E251A507600D6BF25 /* DetailUtilisateurs.swift */,
-				37D0E518251A4F0B00D6BF25 /* APIRequete.swift */,
-				378285B1251A957E0033D690 /* MaListe.swift */,
-				37D0E51B251A4FD900D6BF25 /* DonneesModele.swift */,
+				3779B29725227EE3000356D8 /* Controleur */,
+				3779B29425227E4C000356D8 /* Modele */,
+				3779B29525227E5C000356D8 /* Vue */,
 				37D0E50C251A4E6800D6BF25 /* Assets.xcassets */,
 				37D0E511251A4E6800D6BF25 /* Info.plist */,
 				37D0E50E251A4E6800D6BF25 /* Preview Content */,
@@ -153,6 +180,7 @@
 				37D0E51F251A507600D6BF25 /* DetailUtilisateurs.swift in Sources */,
 				37D0E51C251A4FD900D6BF25 /* DonneesModele.swift in Sources */,
 				37D0E519251A4F0B00D6BF25 /* APIRequete.swift in Sources */,
+				3779B29A25227F95000356D8 /* LocaliserPoint.swift in Sources */,
 				378285B2251A957E0033D690 /* MaListe.swift in Sources */,
 				37D0E50B251A4E6700D6BF25 /* ContentView.swift in Sources */,
 				37D0E509251A4E6700D6BF25 /* lectureAPIApp.swift in Sources */,
