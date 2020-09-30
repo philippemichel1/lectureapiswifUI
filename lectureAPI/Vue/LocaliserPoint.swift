@@ -14,7 +14,12 @@ struct LocaliserPoint: View {
     @State var longitude:Double = 81.1496
     @State var location:MKCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -37.3159, longitude: 81.1496), span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
     var body: some View {
-        Map(coordinateRegion: $location)
+        VStack {
+            Text("Latitude \(latitude)   Longitude \(longitude)")
+                .foregroundColor(.red)
+            Map(coordinateRegion: $location)
+        }
+        
         //        Map(coordinateRegion: $location, interactionModes: .all, showsUserLocation: true, userTrackingMode: .none, annotationItems: maLocalisation.CoordoneeGeo(latitisudeString: maLocalisation.address.geo.lat, longitudeString: maLocalisation.address.geo.lng)) { (lieu)  in
         //            <#code#>//
         //        }
@@ -22,7 +27,6 @@ struct LocaliserPoint: View {
                 latitude = maLocalisation.address.geo.convStrDouble(donneeString: maLocalisation.address.geo.lat)
                 longitude = maLocalisation.address.geo.convStrDouble(donneeString: maLocalisation.address.geo.lng)
                 location  = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), span: MKCoordinateSpan(latitudeDelta: 2, longitudeDelta: 2))
-            
             }
         
     }
