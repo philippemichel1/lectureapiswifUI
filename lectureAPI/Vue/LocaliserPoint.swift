@@ -19,10 +19,6 @@ struct LocaliserPoint: View {
                 .foregroundColor(.red)
             Map(coordinateRegion: $location)
         }
-        
-        //        Map(coordinateRegion: $location, interactionModes: .all, showsUserLocation: true, userTrackingMode: .none, annotationItems: maLocalisation.CoordoneeGeo(latitisudeString: maLocalisation.address.geo.lat, longitudeString: maLocalisation.address.geo.lng)) { (lieu)  in
-        //            <#code#>//
-        //        }
             .onAppear {
                 latitude = maLocalisation.address.geo.convStrDouble(donneeString: maLocalisation.address.geo.lat)
                 longitude = maLocalisation.address.geo.convStrDouble(donneeString: maLocalisation.address.geo.lng)

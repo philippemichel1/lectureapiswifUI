@@ -30,7 +30,6 @@ struct MaListe: View {
                 self.connexion.startRequeteJSONDecoder()
             }
         } // fin body
-        
     }
 }
 
